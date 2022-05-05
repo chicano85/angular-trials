@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFoundError } from 'rxjs';
+import { NotFoundComponent } from './core/shared/components/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -8,7 +8,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./public/public.module').then((m) => m.PublicModule),
   },
-  //{ path: '**', component: NotFoundComponent}
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
