@@ -1,0 +1,10 @@
+.character-card {
+  height: 100%;
+}
+
+.img-character {
+  width: 90%;
+  height: 80%;
+  display: block;
+  margin: auto;
+}
